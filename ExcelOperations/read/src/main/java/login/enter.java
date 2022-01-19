@@ -10,7 +10,7 @@ import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class Read {
+public class enter {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
@@ -21,15 +21,14 @@ public class Read {
 
 		XSSFWorkbook excelWorkBook = new XSSFWorkbook(Fis);
 
-		XSSFSheet excelSheet = excelWorkBook.getSheetAt(0);
+		XSSFSheet excelSheet = excelWorkBook.getSheetAt(1);
 
 		int rows = excelSheet.getPhysicalNumberOfRows();// 3
-		int cols = excelSheet.getRow(0).getPhysicalNumberOfCells();// 2
+		int cols = excelSheet.getRow(1).getPhysicalNumberOfCells();// 2
 		String data[][] = new String[rows][cols];
 		XSSFCell cell;
 		try {
-			for (int i = 1; i < rows; i++) 
-			{
+			for (int i = 1; i < rows; i++) {
 				Row row = excelSheet.getRow(i);
 
 				for (int j = 1; j < cols; j++) {
