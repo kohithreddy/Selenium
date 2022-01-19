@@ -15,9 +15,10 @@ public class Read {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 
-		File f = new File("**/ExcelOperations/read/data.xlsx");
+		File f = new File("data.xlsx");
+		String absolute = f.getAbsolutePath();
 
-		FileInputStream Fis = new FileInputStream(f);
+		FileInputStream Fis = new FileInputStream(absolute);
 
 		XSSFWorkbook excelWorkBook = new XSSFWorkbook(Fis);
 
