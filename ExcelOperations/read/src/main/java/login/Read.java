@@ -15,7 +15,7 @@ public class Read {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 
-		File f = new File("**\Selenium\ExcelOperations\read\data.xlsx");
+		File f = new File("Selenium\ExcelOperations\read\data.xlsx");
 		String absolute = f.getAbsolutePath();
 
 		FileInputStream Fis = new FileInputStream(absolute);
